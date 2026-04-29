@@ -40,7 +40,7 @@ All simulations were conducted in R (version 4.5).
 To reproduce the results:
 
 1. Open the project in RStudio  
-2. Run `simulation_main.R`  
+2. Run `Post Hoc kodlar.R`  
 3. Results will be generated and saved in the `/results` folder  
 
 ## Author

@@ -1,12 +1,12 @@
-# Monte Carlo Simulation of Post-Hoc Tests under Variance Heterogeneity
+# Monte Carlo Simulation of Post-Hoc Tests in Small Samples
 
-This repository contains the R code and results for the study:
+This repository contains the R code and simulation results for the study:
 
-"An Empirical Comparison of Seven Post-Hoc Procedures under Variance Heterogeneity: A Monte Carlo Investigation in Small-Sample Designs"
+Eltas, Ö. (2026). *A Monte Carlo Comparison of Seven Post Hoc Procedures under Homogeneous and Heterogeneous Variance Conditions in Small Samples*. (Under review)
 
 ## Overview
 
-This study evaluates seven post hoc multiple comparison procedures:
+This study evaluates the performance of seven post hoc multiple comparison procedures:
 
 - Tukey HSD  
 - Scheffé  
@@ -18,7 +18,7 @@ This study evaluates seven post hoc multiple comparison procedures:
 
 The evaluation is based on:
 
-- Type I error rate  
+- Familywise Type I error rate  
 - Statistical power  
 
 across a fully crossed factorial design:
@@ -26,12 +26,13 @@ across a fully crossed factorial design:
 - Number of groups: k = 3, 4, 5  
 - Sample size per group: n = 6, 8, 10  
 - Variance structure: homogeneous, moderate, and high heterogeneity  
+- Replications: 10,000 per condition  
 
 ## Files
 
 - `R/Post Hoc kodlar.R` → main simulation script  
-- `results/results_final.csv` → summarized simulation results  
-- `results/results_final.rds` → full simulation output  
+- `results/results_final.csv` → full simulation results  
+- `results/results_final.rds` → full simulation results (R object)  
 
 ## Reproducibility
 
@@ -43,11 +44,18 @@ To reproduce the results:
 2. Run `Post Hoc kodlar.R`  
 3. Results will be generated and saved in the `/results` folder  
 
+## Notes
+
+This repository is provided for transparency and reproducibility.  
+
 ## Author
 
 Ömer Eltas  
-Atatürk University  
+Department of Biometry  
+Atatürk University, Turkey  
 
 ## License
+
+MIT License
 
 MIT License

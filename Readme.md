@@ -37,11 +37,14 @@ across a fully crossed factorial design:
 
 All simulations were conducted in R (version 4.5).
 
+Randomness was controlled using a fixed seed:
+`set.seed(12345)`
+
 To reproduce the results:
 
 1. Open the project in RStudio  
 2. Run `Post Hoc kodlar.R`  
-3. Results will be generated and saved in the `/results` folder  
+3. Results will be generated and saved in the `/results` folder 
 
 ## Notes
 

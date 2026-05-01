@@ -2,8 +2,7 @@
 
 This repository contains the R code and simulation results for the study:
 
-Eltas, Ö. (2026). *A Monte Carlo Comparison of Seven Post Hoc Procedures under Homogeneous and Heterogeneous Variance Conditions in Small Samples*. (Under review)
-
+Eltas, Ö. (2026). *A Monte Carlo Comparison of Seven Post Hoc Procedures under Homogeneous and Heterogeneous Variance Conditions in Small Samples*.
 ## Overview
 
 This study evaluates the performance of seven post hoc multiple comparison procedures:

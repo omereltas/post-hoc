@@ -56,5 +56,3 @@ Atatürk University, Turkey
 ## License
 
 MIT License
-
-MIT License

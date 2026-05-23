@@ -1,5 +1,3 @@
-# Monte Carlo Simulation of Post-Hoc Tests in Small Samples
-
 # Post-Hoc Multiple Comparison Procedures: A Monte Carlo Simulation Study
 
 This repository contains the R code and results for the simulation study:

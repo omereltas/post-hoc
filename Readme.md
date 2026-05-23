@@ -1,61 +1,54 @@
 # Monte Carlo Simulation of Post-Hoc Tests in Small Samples
 
-This repository contains the R code and simulation results for the study:
+# Post-Hoc Multiple Comparison Procedures: A Monte Carlo Simulation Study
 
-Eltas, Ö. (2026). *A Monte Carlo Comparison of Seven Post Hoc Procedures under Homogeneous and Heterogeneous Variance Conditions in Small Samples*.
-## Overview
+This repository contains the R code and results for the simulation study:
 
-This study evaluates the performance of seven post hoc multiple comparison procedures:
+**"An Empirical Comparison of Seven Post-Hoc Procedures under Variance 
+Heterogeneity: A Monte Carlo Investigation in Small-Sample Designs"**
 
-- Tukey HSD  
-- Scheffé  
-- Fisher LSD (protected)  
-- Games–Howell  
-- Dunnett T3  
-- Tamhane T2  
-- Šidák correction  
+## Repository Contents
 
-The evaluation is based on:
+| File | Description |
+|------|-------------|
+| `simulation.R` | Main Monte Carlo simulation code |
+| `figures.R` | Code for reproducing Figure 1 (Power) and Figure 2 (Type I Error) |
+| `results_final.csv` | Simulation output used in the manuscript |
+| `results_final.rds` | Simulation output in R format |
 
-- Familywise Type I error rate  
-- Statistical power  
+## Requirements
 
-across a fully crossed factorial design:
+```r
+install.packages(c("PMCMRplus", "ggplot2", "dplyr"))
+```
 
-- Number of groups: k = 3, 4, 5  
-- Sample size per group: n = 6, 8, 10  
-- Variance structure: homogeneous, moderate, and high heterogeneity  
-- Replications: 10,000 per condition  
+## How to Reproduce
 
-## Files
+1. Run `simulation.R` to generate the results 
+2. Run `figures.R` to reproduce the figures
 
-- `R/Post Hoc kodlar.R` → main simulation script  
-- `results/results_final.csv` → full simulation results  
-- `results/results_final.rds` → full simulation results (R object)  
+Alternatively, load `results_final.csv` directly and run only `figures.R`.
+
+## Simulation Design
+
+- **Procedures compared:** Tukey's HSD, Scheffé, Fisher's LSD, 
+  Games–Howell, Dunnett T3, Tamhane T2, Šidák
+- **Groups (k):** 3, 4, 5
+- **Sample size per group (n):** 6, 8, 10
+- **Variance conditions:** Homogeneous, Moderate heterogeneity, 
+  High heterogeneity
+- **Replications:** 10,000 per condition
+- **Effect size:** Cohen's f = 0.40
+- **Distribution:** Normal
 
 ## Reproducibility
 
-All simulations were conducted in R (version 4.5).
-
-Randomness was controlled using a fixed seed:
-`set.seed(12345)`
-
-To reproduce the results:
-
-1. Open the project in RStudio  
-2. Run `Post Hoc kodlar.R`  
-3. Results will be generated and saved in the `/results` folder 
-
-## Notes
-
-This repository is provided for transparency and reproducibility.  
-
-## Author
-
-Ömer Eltas  
-Department of Biometry  
-Atatürk University, Turkey  
+All results are fully reproducible via `set.seed(12345)`.
 
 ## License
 
-MIT License
+This code is released under the MIT License.
+
+## Contact
+
+For questions, please open an issue or contact via GitHub.

@@ -9,7 +9,7 @@ Heterogeneity: A Monte Carlo Investigation in Small-Sample Designs"**
 
 | File | Description |
 |------|-------------|
-| `simulation.R` | Main Monte Carlo simulation code |
+| `Post Hoc kodlar.R` | Main Monte Carlo simulation code |
 | `figures.R` | Code for reproducing Figure 1 (Power) and Figure 2 (Type I Error) |
 | `results_final.csv` | Simulation output used in the manuscript |
 | `results_final.rds` | Simulation output in R format |
